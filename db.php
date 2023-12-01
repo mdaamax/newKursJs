@@ -2,6 +2,7 @@
 
 const DB_PROVIDER = 'pgsql';
 const DB_HOST = 'localhost';
+//тут надо бд
 const DB_BASENAME = 'beermax1';
 const DB_USERNAME = 'postgres';
 const DB_PASSWORD = '';
