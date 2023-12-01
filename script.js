@@ -7,7 +7,7 @@ img.src = 'https://i.ibb.co/FzH4M6c/flappy-bird-set.png'
 let gamePlaying = false
 
 const gravity = 0.5,
-    speed = 7, // скорость
+    speed = 8, // скорость
     size = [51, 36],
     jump = -10, // высота прыжка
     widthBird = canvas.width / 10 // отображение птицы по ширине
@@ -161,13 +161,14 @@ const render = () => {
         flyHeight = (canvas.height / 2) - (size[1] / 2)
 
         ctx.fillText(`Рекорд: ${bestScore}`, 130, 245)
+        // ctx.fillText(`Текущий счет: ${currentScore}`, 90, 145)
         ctx.fillText('Нажми на ПКМ', 90, 535)
         ctx.font = "bold 30px courier"
 
     }
 
     document.getElementById('bestScore').innerHTML = `Рекорд: ${bestScore}`
-    document.getElementById('currentScore').innerHTML = `Текущий счет: ${bestScore}`
+    document.getElementById('currentScore').innerHTML = `Текущий счет: ${currentScore}`
 
     // выполенине анимации
     window.requestAnimationFrame(render)
