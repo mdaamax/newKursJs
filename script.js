@@ -69,7 +69,7 @@ const render = () => {
         canvas.height
     )
 
-    // pipe display
+    // трубы
     if (gamePlaying) {
 
         pipes.map(pipe => {
@@ -102,7 +102,7 @@ const render = () => {
                 canvas.height - pipe[1] + pipeGap
             )
 
-            // поин + новая труба
+            // поинт + новая труба
             if (pipe[0] <= -pipeWidth) {
                 currentScore++
                 // проверка рекорда
